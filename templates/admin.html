@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+
+    <form action="/add_post" method="post">
+        <label for="title">Başlık:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <textarea id="content" name="content" rows="4" required></textarea>
+        <br>
+        <button type="submit">Yazı Ekle</button>
+    </form>
+<style>
+
+
+    form{
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #title{
+        height: 20px;
+        width: 300px;
+    }
+
+    #content{
+        margin-top: 15px;
+        width: 50%;
+        height: 300px;
+    }
+</style>
+</body>
+</html>
