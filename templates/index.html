@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poor+Story&family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poor+Story&family=Single+Day&display=swap" rel="stylesheet">
+    <title>Flask Blog</title>
+</head>
+<body>
+    <main>
+        <div class="profile">
+            <img class="img" src="https://i.hizliresim.com/h8z0jgs.png" alt="Yazar Resmi">
+            <p class="about">Horhorik</p>
+            <div>
+                <a href="https://github.com/horhorist" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/horicelli" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/user/31d5ixzzw3tam2pui3v37apxczxa?si=e72690c4932e4154" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+
+    <main>
+        <h3>My Blog</h3>
+        <hr>
+        {% for post in posts %}
+            <div class="post">
+                <details>
+                    <summary>{{ post.title }}</summary>
+                    <div class="content">{{ post.content|safe }}</div>
+                  </details>
+                  
+                
+            </div>
+        {% endfor %}
+    </main>
+
+    <footer>
+        <!-- Footer içeriği -->
+    </footer>
+
+    <style>
+
+    
+    body{
+        background-color: #fffefc;
+        }
+
+    .profile {
+        color: #040404;
+        margin-top: 10px ;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .fab{
+        color: #3d3d3d;
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+
+    .about{
+        font-family: "Poor Story", system-ui;
+        font-size: 25px;
+
+    }
+    
+    main{
+
+        color: #cc1111;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 80px;
+    }
+
+    h3{
+        color: #040404;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    summary{
+        color: #040404;
+        font-family: "Merriweather Sans", sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .content{
+        margin-top: 0px;
+        color: #949392;
+        font-size: 20px;
+        font-family: "Merriweather Sans", sans-serif;
+    }
+    hr{
+        margin-top:15px;
+        height: 1px;
+    }
+    
+    </style>
+    
+</body>
+</html>
