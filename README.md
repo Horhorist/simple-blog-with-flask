@@ -4,6 +4,8 @@ Just change the **nivis** in line 17 of the app.py file.
 ``@app.route('/nivis')
 def admin():
     return render_template('admin.html')``
-
+    
 I will share the ability to delete and edit posts in the near future.
-<img src="https://i.hizliresim.com/19foxbn.jpg" width="200" height="200">
+
+![image](https://github.com/Horhorist/simple-blog-with-flask/assets/109848153/77d7eacf-ebc4-4c4d-84d1-b16a7465344e)
+
