@@ -3,9 +3,7 @@ It saves the posts as markdown. Newly written posts are saved under the markdown
 Just change the **nivis** in line 17 of the app.py file.
 
 ``@app.route('/nivis')
-
-def admin():
-
+    def admin():
     return render_template('admin.html')``
     
 I will share the ability to delete and edit posts in the near future.
